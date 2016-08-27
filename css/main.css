@@ -39,18 +39,27 @@ p {
 	color: #777;
 	cursor: pointer;
 	background: #F9F9F9;
+	/*background: #007FFF;*/
 	border: 1px solid #E4E4E4;
 	border-bottom: 1px solid #F9F9F9;
 	position: relative;
 }
-
-/*.tabsСaption li:hover {
-	color: #F70;
+.tabsСaption li:last {
+		margin: 0 0 -1px 0;
+}
+.tabsСaption li:hover {
+	color: #444;
+	background: #EFEFEF;
+	/*border-bottom: 1px solid #F9F9F9;*/
+	/*color: #F70;*/
 	padding: 0 13px;
-	background: #FFFFDF;
-	/*border: 1px solid #FFCA95;
-}*/
-
+	/*padding: 0 13px 2px;*/
+	/*background: #FFFFDF;*/
+	/*border: 1px solid #FFCA95;*/
+}
+li.active:hover {
+	padding: 0 13px 2px;
+}
 .tabsСaption .active {
 	color: #444;
 	background: #EFEFEF;
@@ -65,6 +74,8 @@ p {
 	border-width: 0 1px 1px;
 	background: #EFEFEF;
 	padding: 0 12px;
+	height: 400px;
+	overflow: hidden;
 }
 
 .tabs__content.active {
