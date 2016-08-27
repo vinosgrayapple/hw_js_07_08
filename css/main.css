@@ -1,7 +1,72 @@
-#tabs-1, #tabs-2, #tabs-3 {
-	display: none;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
-#tabs li{
+
+body {
+	margin: 30px; 
+	font: 13px/1.5  Tahoma, Arial;
+}
+
+a {
+	color: #0094D6;
+}
+
+p {
+	padding: 7px 0;
+}
+
+.tabs {
+	width: 700px;
+	background: #EFEFEF;
+	margin: 0 0 30px;
+}
+
+.tabsСaption {
+	height: 28px;
+	line-height: 25px;
 	list-style: none;
-	display: inline-block;
+	border-bottom: 1px solid #DDD;
+	background: #FFF;
+}
+
+.tabsСaption li {
+	float: left;
+	display: inline;
+	margin: 0 1px -1px 0;
+	padding: 0 13px 1px;
+	color: #777;
+	cursor: pointer;
+	background: #F9F9F9;
+	border: 1px solid #E4E4E4;
+	border-bottom: 1px solid #F9F9F9;
+	position: relative;
+}
+
+/*.tabsСaption li:hover {
+	color: #F70;
+	padding: 0 13px;
+	background: #FFFFDF;
+	/*border: 1px solid #FFCA95;
+}*/
+
+.tabsСaption .active {
+	color: #444;
+	background: #EFEFEF;
+	padding: 0 13px 2px;
+	border: 1px solid #D4D4D4;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.tabs__content {
+	display: none;
+	border: 1px solid #D4D4D4;
+	border-width: 0 1px 1px;
+	background: #EFEFEF;
+	padding: 0 12px;
+}
+
+.tabs__content.active {
+	display: block;
 }
