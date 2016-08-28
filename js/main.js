@@ -1,6 +1,7 @@
 
 $(function() {
 
+/*======1=======*/ 
 
 
 	$("ul.tabsСaption li").on("click", function() {
@@ -13,14 +14,12 @@ $(function() {
 		}
 	});
 
+/*======2=======*/ 
 
-
-
-// var titels = 
-
-var titles = $("input[title]").map(function(){
+var titles = $("input[title]").each(function(){
 	var title =  $(this).attr("title");
 	$(this).removeAttr("title").parent().append("<span>" + title + "</span>");
+
 	$(this).siblings("span")
 	.css({
 		"background": "rgba(255,255,255,0.7)",
@@ -30,73 +29,21 @@ var titles = $("input[title]").map(function(){
 		"box-shadow": "1px 1px 8px rgba(0,0,0,0.5)"
 	})
 	.addClass("tooltip")
-	.show();
+	.hide();
+});
+$("input").on("mouseenter click focus",function() {
+	$(this).next("span").fadeIn();
+});
 
-	return title;
-}).get();
-console.log(titles);
+$("input").on("mouseleave focusout",function() {
+	$(this).next("span").fadeOut();
+});
 
 
-
-
-
-
-
+$("#button").on("click", function() {
+	$("span.tooltip").fadeIn( 2000 ).delay( 600 ).fadeOut( 2000 );
+});
 
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// (function($) {
-
-
-// $(function() {
-
-// 	$('ul.tabsСaption').on('click', 'li:not(.active)', function() {
-// 		$(this).addClass('active').siblings().removeClass('active')
-// 			.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-// 	});
-
-// });
-
-
-// })(jQuery);

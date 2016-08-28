@@ -99,4 +99,14 @@ li.active:hover {
     display: inline-block;
   }
  /**/
-  
+ #button {
+ 	cursor: pointer;
+ 	display: inline-block;
+ 	padding: 5px;
+ 	color: #FFF;
+  	margin-top: 30px;
+  	background: rgba(0,0,250,.8);
+  	 letter-spacing: .2em;
+  	 border: 1px solid #999;
+  	 text-shadow: 1px 1px 2px black, 0 0 1em silver;
+  }
