@@ -81,3 +81,22 @@ li.active:hover {
 .tabs__content.active {
 	display: block;
 }
+.div__form {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.div__form div {
+	margin-bottom: 15px;
+	 /*margin-bottom: 2em;*/
+}
+
+  label {
+    display: inline-block; 
+    width: 5em;
+  }
+  
+  fieldset .help {
+    display: inline-block;
+  }
+ /**/
+  

@@ -12,7 +12,7 @@
 <div class="tabs">
 
 	<ul class="tabsСaption">
-		<li class="active">Первая вкладка</li>
+		<li class="active"><strong>== Tooltip ==</strong></li>
 		<li>Вторая вкладка</li>
 		<li>Третья вкладка</li>
 		<li>Червертая вкладка</li>
@@ -20,7 +20,28 @@
 	</ul>
 
 	<div class="tabs__content  active">
-		<p>1.</p>
+		<div class="div__form">
+				
+			<form>
+
+				<div>
+					<label for="lastname">Фамилия</label>
+					<input id="lastname" name="lastname" title="Пожалуйста введите вашу фамилию.">
+				</div>
+				<div>
+					<label for="firstname">Имя</label>
+					<input id="firstname" name="firstname" title="Пожалуйста введите ваше имя.">
+				</div>
+
+
+				<div>
+					<label for="address">Адрес</label>
+					<input id="address" name="address" title="Ваш домашний или рабочий адрес.">
+				</div>
+
+			</form>
+			
+		</div>
 	</div>
 
 	<div class="tabs__content">
